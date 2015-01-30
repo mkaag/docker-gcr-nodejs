@@ -16,10 +16,10 @@ RUN \
         g++ \
         make \
         libpq-dev \
-        gyp
+        gyp \
         git \
-        build-essential; \
-    add-apt-repository -y ppa:chris-lea/node.js; \
+        build-essential && \
+    add-apt-repository -y ppa:chris-lea/node.js && \
     apt-get update -qqy; \
     apt-get install -qqy \
         nodejs \
