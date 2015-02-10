@@ -13,6 +13,8 @@ RUN \
         software-properties-common \
         python-software-properties \
         python \
+        libfreetype6 \
+        libfontconfig1 \
         g++ \
         make \
         libpq-dev \
@@ -34,4 +36,4 @@ RUN curl -L https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOMJS
 RUN git clone git://github.com/n1k0/casperjs.git /usr/local/casperjs && \
     ln -sf ../casperjs/bin/casperjs /usr/local/bin
 
-RUN npm install -g bower
+RUN npm install -g bower sails
